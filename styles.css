@@ -1,0 +1,143 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+#content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.balance {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+/* Contenu principal */
+main {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+
+h2 {
+    color: #444;
+    text-decoration: underline;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.team-member {
+    margin-top: 20px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer .footer-content {
+    font-size: 0.9em;
+}
+
+.logo-footer img {
+    width: 80px;
+}
