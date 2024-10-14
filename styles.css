@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    width: 10px;
+    width: 80px;
 }
 
 #content {
@@ -37,8 +37,8 @@ header {
 }
 
 .avocates {
-    width: 30px;
-    height: 30px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -166,8 +166,4 @@ footer .footer-content {
 .logo-footer img {
     width: 80px;
 }
-
-
-      justify-content: space-between;
-    }
-  }}
+  }
