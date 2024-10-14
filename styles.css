@@ -11,10 +11,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #333;
     color: white;
 }
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) 
+    {.header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
 
 .logo img {
     width: 100px;
@@ -36,8 +47,33 @@ header {
 
 }
 
+.avocates {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+
+}
+
 span {
     font-weight: bold;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
 }
 
 /* Navigation */
@@ -62,9 +98,9 @@ nav ul li a:hover {
     background-color: #777;
 }
 
-/* Body */
+/* Contenu principal */
 main {
-    padding: 40px;
+    padding: 70px;
     background-color: #f9f9f9;
 }
 
@@ -129,9 +165,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+    margin-top: auto;
     background-color: #333;
-    color: white;
 }
 
 footer .footer-content {
@@ -141,3 +177,59 @@ footer .footer-content {
 .logo-footer img {
     width: 80px;
 }
+    /* Media Queries */
+@media (max-width: 768px) {
+    .slide {
+      height: 250px;
+    }
+  
+    header h1 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  }
+  
+/* Pour les petits écrans (smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Ajoutez vos ajustements CSS ici pour les smartphones */
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+    nav {
+      display: none; /* Masquer la navigation si besoin */
+    }
+    header img {
+      width: 100%;
+    }
+  }
+  
+  /* Pour les tablettes */
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    /* Ajustements pour les tablettes */
+    body {
+      font-size: 16px;
+    }
+    header img {
+      width: 80%;
+    }
+    nav {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  /* Pour les ordinateurs de bureau */
+  @media only screen and (min-width: 993px) {
+    /* CSS par défaut pour les grands écrans */
+    body {
+      font-size: 18px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  }}
