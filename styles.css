@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 10px;
 }
 
 #content {
@@ -37,8 +37,8 @@ header {
 }
 
 .avocates {
-    width: 200px;
-    height: 200px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin: auto;
     display: flex;
